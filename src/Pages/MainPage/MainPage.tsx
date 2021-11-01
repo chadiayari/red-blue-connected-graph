@@ -40,11 +40,11 @@ export default function MainPage() {
         {graphString && (
           <ul className={Styles.result}>
             <li>
-              The Graph is:&nbsp;
+              The graph is&nbsp;
               {isConnected ? "connected" : "disconnected"}
             </li>
             <li>
-              The Graph is:&nbsp;
+              The graph is&nbsp;
               {isRedBlue ? "red-blue" : "not red-blue"}
             </li>
           </ul>

@@ -1,5 +1,6 @@
 import React, { InputHTMLAttributes } from "react";
 import { validateGraphInputString } from "../../util/graph-string";
+import Styles from "./input.module.scss";
 
 interface ValidatedGraphInputProps
   extends InputHTMLAttributes<HTMLInputElement> {}
@@ -14,11 +15,18 @@ export default function ValidatedGraphInput(props: ValidatedGraphInputProps) {
   }
 
   return (
-    <input
-      {...props}
-      type="text"
-      value={value}
-      onChange={(e) => handleChange(e)}
-    />
+    <div className={Styles.divInput}>
+      <h3>
+        Please enter your graph value
+      </h3>
+      <input
+        {...props}
+        type="text"
+        value={value}
+        className={Styles.graphInput}
+        onChange={(e) => handleChange(e)}
+      />
+    </div>
+
   );
 }

@@ -17,7 +17,7 @@ export function renderGraph(container, data) {
     return d.name;
   };
   const color = (d) => {
-    return d.color === "RED" ? "#F00" : "#00F";
+    return d.color === "RED" ? "rgb(222, 140, 140)" : "rgb(102, 150, 232)";
   };
   container.current.innerHTML = "";
   const simulation = d3

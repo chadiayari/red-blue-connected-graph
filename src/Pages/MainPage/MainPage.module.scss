@@ -7,8 +7,10 @@
   }
   .graphContainer {
     height: calc(100vh - (24px * 2));
-    width: 100%;
-    border: 1px solid #000;
+    width: 70%;
+    margin-left: 20%;
+    border: 3px solid rgb(102, 150, 232);
+    border-radius: 8px;
   }
   .result {
     padding: 24px;
